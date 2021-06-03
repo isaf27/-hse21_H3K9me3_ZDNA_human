@@ -9,8 +9,8 @@ library(clusterProfiler)
 
 ###
 
-#NAME <- 'H3K4me3_A549.intersect_with_DeepZ'
-NAME <- 'DeepZ'
+NAME <- 'H3K9me3_A549.intersect_with_DeepZ'
+#NAME <- 'DeepZ'
 #NAME <- 'H3K9me3_A549.ENCFF811QUJ.hg19.filtered'
 #NAME <- 'H3K9me3_A549.ENCFF444EWQ.hg19.filtered'
 BED_FN <- paste0(DATA_DIR, NAME, '.bed')
