@@ -10,8 +10,8 @@ library(clusterProfiler)
 ###
 
 #NAME <- 'H3K4me3_A549.intersect_with_DeepZ'
-#NAME <- 'DeepZ'
-NAME <- 'H3K9me3_A549.ENCFF811QUJ.hg19.filtered'
+NAME <- 'DeepZ'
+#NAME <- 'H3K9me3_A549.ENCFF811QUJ.hg19.filtered'
 #NAME <- 'H3K9me3_A549.ENCFF444EWQ.hg19.filtered'
 BED_FN <- paste0(DATA_DIR, NAME, '.bed')
 
@@ -28,5 +28,5 @@ dev.off()
 
 peak <- readPeakFile(BED_FN)
 pdf(paste0(OUT_DIR, 'chip_seeker.', NAME, '.covplot.pdf'))
-covplot(peak, weightCol="V5")
+covplot(peak) #, weightCol="V5")
 dev.off()
