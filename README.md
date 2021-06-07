@@ -1,5 +1,15 @@
 # hse21_H3K9me3_ZDNA_human
 
+Организм: human.
+
+Гистоновая метка: H3K9me3.
+
+Тип клеток: A549.
+
+ChIP-seq эксперименты:
+- https://www.encodeproject.org/files/ENCFF444EWQ/
+- https://www.encodeproject.org/files/ENCFF811QUJ/
+
 UCSC GenomeBrowser session:  https://genome.ucsc.edu/s/isaf27/hse21_H3K9me3_ZDNA_human
 
 ## Location of ChIP-seq peaks
