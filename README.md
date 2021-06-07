@@ -91,3 +91,13 @@ ChIP-seq эксперименты:
 - пересечение со вторичной структурой ДНК (название intersect_with_DeepZ)
 
 Ссылка на сессию в UCSC GenomeBrowser:  https://genome.ucsc.edu/s/isaf27/hse21_H3K9me3_ZDNA_human
+
+Приведем два примера различных пересечений:
+
+- Пересечение двух экспериментов, а также вторичной структуры ДНК. Его можно увидеть на гене ZNF585A, координаты chr19:37,657,445-37,672,018.
+
+![alt text](https://github.com/isaf27/hse21_H3K9me3_ZDNA_human/blob/main/images/screen.intersection1.png)
+
+- Пересечение объединения двух экспериментов и вторичной структуры ДНК. Его можно увидеть в межгенном пространстве, координаты chr1:2,787,757-2,788,245.
+
+![alt text](https://github.com/isaf27/hse21_H3K9me3_ZDNA_human/blob/main/images/screen.intersection2.png)
