@@ -3,11 +3,12 @@ source('lib.R')
 
 ###
 
-NAME <- 'DeepZ'
+#NAME <- 'DeepZ'
 #NAME <- 'H3K9me3_A549.ENCFF444EWQ.hg19'
 #NAME <- 'H3K9me3_A549.ENCFF444EWQ.hg38'
 #NAME <- 'H3K9me3_A549.ENCFF811QUJ.hg19'
 #NAME <- 'H3K9me3_A549.ENCFF811QUJ.hg38'
+NAME <- 'H3K9me3_A549.intersect_with_DeepZ'
 
 ###
 
