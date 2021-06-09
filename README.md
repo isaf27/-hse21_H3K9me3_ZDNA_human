@@ -34,6 +34,13 @@ ChIP-seq эксперименты:
 
 Гистограммы длин пиков не поменялись, никаких аномалий не произошло, поэтому можно переходить к следующим шагам.
 
+Команды:
+
+```bash
+liftOver H3K9me3_A549.ENCFF444EWQ.hg38.bed hg38ToHg19.over.chain.gz H3K9me3_A549.ENCFF444EWQ.hg19.bed H3K9me3_A549.ENCFF444EWQ.unmapped.bed
+liftOver H3K9me3_A549.ENCFF811QUJ.hg38.bed hg38ToHg19.over.chain.gz H3K9me3_A549.ENCFF811QUJ.hg19.bed H3K9me3_A549.ENCFF811QUJ.unmapped.bed
+```
+
 ## 2. Удаление длинных участков
 
 Для каждого из экспериментов удалим пики, которые имеют длину (> 5000). Снова нарисуем гистограммы распределения длин участков.
@@ -79,6 +86,13 @@ ChIP-seq эксперименты:
 ### 5.2. Расположение относительно аннотированных генов для построенного пересечения
 
 ![alt text](https://github.com/isaf27/hse21_H3K9me3_ZDNA_human/blob/main/images/chip_seeker.H3K9me3_A549.intersect_with_DeepZ.plotAnnoPie.png)
+
+Команды:
+
+```bash
+cat *.filtered.bed | sort -k1,1 -k2,2n | bedtools merge > H3K9me3_A549.merge.hg19.bed
+bedtools intersect -a DeepZ.bed -b H3K9me3_A549.merge.hg19.bed > H3K9me3_A549.intersect_with_DeepZ.bed
+```
 
 ## 6. Визуализация в геномном браузере
 
